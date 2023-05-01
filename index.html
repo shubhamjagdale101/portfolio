@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 min-h-screen flex flex-col justify-between">
+
+    <header class="bg-white shadow">
+        <div class="container mx-auto flex justify-between items-center py-4">
+            <h1 class="text-gray-900 font-bold text-xl px-4">My Portfolio</h1>
+            <nav class="text-gray-600 text-lg">
+                <a href="#about" class="py-2 px-3 mx-2 box" onClick="scrollToSectionId('about'); return false;">About</a>
+                <a href="#education" class="py-2 px-3 mx-2 box" onClick="scrollToSectionId('education'); return false;">Education</a>
+                <a href="#" class="py-2 px-3 mx-2 box">project</a>
+                <a href="#contact" class="py-2 px-3 mx-2 box" onClick="scrollToSectionId('contact'); return false;">Contact</a>
+                <a href="shubham_jagdale.pdf" target="_blank" rel="noopener noreferrer" class="py-2 px-3 mx-2 box">Resume</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 text-white flex flex-col justify-evenly">
+        <section class="container flex flex-col lg:flex-row mx-auto justify-between align-middle my-10">
+            <div class="flex flex-row justify-between">
+                <div class="fab-icons">
+                    <a href="https://www.facebook.com/shubham.jagdale.948?mibextid=ZbWKwL" target="_blank" class="fab-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/Shubham07760476" target="_blank" class="fab-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/shubhamj2810/" target="_blank" class="fab-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/jagdale-shubham-6013b1224/" target="_blank" class="fab-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/shubhamjagdale101" target="_blank" class="fab-icon"><i class="fab fa-github"></i></a>
+                </div>
+
+                <div class="relative p-16">
+                    <img src="shubham.jpg" alt="Kohli" width="400px" class="rounded-2xl">
+                </div>              
+            </div>
+            <div class="p-16 w-full lg:w-3/4">
+                <div class="text-xl lg:text-4xl font-bold font-serif">Shubham Jagdale</div>
+                <span class="text-xl lg:text-3xl font-serif">I am</span>
+                <span id="introduction" class="text-lg lg:text-3xl font-serif"></span>
+                <p class="indent-2.5 leading-8 mt-4 font-serif lg:text-center">
+                    As an engineering student and a full-stack developer, I have a passion for building innovative and intuitive applications. My focus is on delivering quality solutions that meet the needs of end-users while staying on top of the latest technologies and industry trends. With a strong foundation in data structures and algorithms, I am able to create efficient and scalable code that maximizes performance. In addition to my technical skills, I also possess strong problem-solving and analytical abilities, which enable me to tackle complex challenges with ease. Whether it's building a website from scratch or developing a new feature for an existing application, I am dedicated to producing top-quality work that exceeds expectations.
+                </p>
+                <div class="flex flex-row justify-center my-4 flex-wrap h-auto">
+                    <div class="h-full border-2 border-green-300 rounded-lg p-4 m-2 myBox">400+ DSA Problems</div>
+                    <div class="h-full border-2 border-green-400 rounded-lg p-4 m-2 myBox">FullStack Developer</div>
+                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox">5+ Certification</div>
+                    <div class="h-full border-2 border-green-300 rounded-lg p-4 m-2 myBox">3+ Blender Projects</div>
+                    <div class="h-full border-2 border-green-400 rounded-lg p-4 m-2 myBox">Java Developer</div>
+                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox">DJANGO Developer</div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="my-8 flex flex-col lg:flex-row items-center">
+            <div class="w-full lg:w-1/2 p-4">
+                <div class="text-white text-xl  lg:text-3xl font-bold font-serif mx-4 text-blue-300">&raquo; About Me</div>
+                <p class="text-center my-4">Hello! I'm Shubham Jagdale. I am currently pursuing my bachelors in the stream of Computer Science at Pimpri Chinchawad college of engineering, Pune.</p>
+                <p class="text-center my-4">I am a web developer enthusiast consistently trying to improve my abilities.I'm always willing to master new skills and put them to good use.</p>
+                <p class="text-center my-4">As a skilled DSA problem solver, I have a deep understanding of data structures and algorithms that allows me to analyze complex problems and develop efficient solutions. I thrive in challenging environments and am able to approach problems with a systematic and analytical mindset</p>
+                <p class="text-center my-4">When I am not programming, my free time is spent on cricket. I am a huge RCB fan and I love to discuss Cricket tactics.</p>
+                <p class="text-center my-4 text-gray-400">Thank You....</p>
+            </div>
+            <div class="text-green-600 w-full lg:w-1/2 text-white text-center text-xl  lg:text-3xl font-bold font-serif px-8">
+                <div class="h-full border-2 border-blue-300 rounded-lg px-8 py-2 m-2 myBox inline text-white">skills</div>
+                <div class="flex flex-row justify-center my-4 flex-wrap h-auto text-lg text-white">
+                    <div class="h-full border-2 border-green-300 rounded-lg p-4 m-2 myBox">TypeScript</div>
+                    <div class="h-full border-2 border-green-400 rounded-lg p-4 m-2 myBox">JavaScript</div>
+                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox">NodeJs</div>
+                    <div class="h-full border-2 border-green-300 rounded-lg p-4 m-2 myBox">React</div>
+                    <div class="h-full border-2 border-green-400 rounded-lg p-4 m-2 myBox">CPP</div>
+                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox">JAVA</div>
+                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox">DSA</div>
+                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox">Blender</div>
+                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox">tailwindcss</div>
+                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox">Python</div>
+                </div>
+                <p id="sentences"></p>
+            </div>
+        </section>
+        <section id="education" class="my-8 items-center mx-4 relative px-2">
+            <div class="text-white text-xl  lg:text-3xl font-bold font-serif mx-4 text-blue-300">&raquo; Education</div>
+            <div class="border-l-4 border-gray-200 px-4 py-2">
+                <div class="mb-8">
+                    <div class="absolute left-0 w-4 h-8 bg-blue-600 rounded-sm text-black p-1">&raquo;</div>
+                    <div class="text-xl lg:px-16 my-1">June 2020 - June 2024</div>
+                    <div class="text-2xl text-blue-600 lg:px-16 my-1">Pimpri Chinchawad College Of Engineering, Pune</div>
+                    <div class="text-xl lg:px-16 my-1">B.Tech in Computer Science</div>
+                    <div class="text-xl text-green-300 lg:px-16 my-1">Current Pointer &xrarr; 8.58</div>
+                    <div class="text-xl lg:px-16 my-1">Studying Data Structure and Algorithms, Database Management Systems, Operating Systems, etc.</div>
+                </div>
+                <div class="my-8">
+                    <div class="absolute left-0 w-4 h-8 bg-blue-600 rounded-sm text-black p-1">&raquo;</div>
+                    <div class="text-xl lg:px-16 my-1">June 2018 - June 2020</div>
+                    <div class="text-2xl text-blue-600 lg:px-16 my-1">Sanjay Ghodawat Olympiad School, Ankali</div>
+                    <div class="text-xl lg:px-16 my-1">Higher Secondary Certificate(HSC)</div>
+                    <div class="text-xl text-green-300 lg:px-16 my-1">HSC percentage &xrarr; 82.15</div>
+                    <div class="text-xl lg:px-16 my-1">Studying subjects like Physics, Chemistry, Maths, IT, Geography of India, etc.</div>
+                </div>
+                <div class="my-8">
+                    <div class="absolute left-0 w-4 h-8 bg-blue-600 rounded-sm text-black p-1">&raquo;</div>
+                    <div class="text-xl lg:px-16 my-1">June 2015 - June 2018</div>
+                    <div class="text-2xl text-blue-600 lg:px-16 my-1">Karmvir Bhaurav Patil English Medium Scholl, Ashta</div>
+                    <div class="text-xl lg:px-16 my-1">Secondary School Certificate(SSC)</div>
+                    <div class="text-xl text-green-300 lg:px-16 my-1">SSC Percentage &xrarr; 88</div>
+                    <div class="text-xl lg:px-16 my-1">Studying subjects like maths, science, marathi, Hindi, Geography, History, etc.</div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="my-8 items-center mx-4 relative px-2">
+            <div class="text-white text-xl  lg:text-3xl font-bold font-serif mx-4 text-blue-300">&raquo; Contact</div>
+            <div class="text-center text-blue-600">Phone Number &xrarr; <span class="text-green-300">9373197132</span></div>
+            <div class="text-center text-blue-600">Gmail &xrarr; <span class="text-green-300">Shubham.jagdale20@pccoepune.org</span></div>
+        </section>
+    </main>
+
+    <footer class="bg-white shadow">
+        <div class="container mx-auto py-4">
+            <p class="text-center text-gray-700">Copyright © 2021 My Portfolio</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

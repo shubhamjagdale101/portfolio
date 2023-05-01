@@ -1,0 +1,40 @@
+.box {
+    background-color: #f7fafc;
+    width: 200px;
+    height: 200px;
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.box:hover {
+    box-shadow: 0 0 5px 2px #111111;
+}
+
+.fab-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left:10px;
+}
+
+.fab-icon {
+    display: block;
+    padding: 10px;
+}
+
+.fab-icon i {
+    font-size: 24px;
+}
+
+.fab-icon:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.myBox{
+    transition: box-shadow 0.3s ease;
+}
+
+.myBox:hover{
+    box-shadow: 0 0 5px 2px white;
+}
