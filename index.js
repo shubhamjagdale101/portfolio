@@ -42,6 +42,7 @@ const links = document.querySelectorAll('nav a');
 function scrollToSectionId(sectionId){
     var section = document.getElementById(sectionId);
     section.scrollIntoView({behavior : "smooth"});
+    if (window.matchMedia("(max-width: 600px)").matches) toggleMenu();
 }
 
 
@@ -89,3 +90,14 @@ setInterval(()=>{
 //         word.innerHTML = newWord+ch;
 //     }
 // },400);
+
+function toggleMenu() {
+    const menuBars = document.querySelectorAll('.navShow');
+    menuBars.forEach(menuBar => {
+        if (menuBar.style.display === 'none') {
+            menuBar.style.display = 'flex';
+        } else {
+            menuBar.style.display = 'none';
+        }
+    });
+}

@@ -13,12 +13,13 @@
     <header class="bg-white shadow">
         <div class="container mx-auto flex justify-between items-center py-4">
             <h1 class="text-gray-900 font-bold text-xl px-4">My Portfolio</h1>
-            <nav class="text-gray-600 text-lg">
-                <a href="#about" class="py-2 px-3 mx-2 box" onClick="scrollToSectionId('about'); return false;">About</a>
-                <a href="#education" class="py-2 px-3 mx-2 box" onClick="scrollToSectionId('education'); return false;">Education</a>
-                <a href="#" class="py-2 px-3 mx-2 box">project</a>
-                <a href="#contact" class="py-2 px-3 mx-2 box" onClick="scrollToSectionId('contact'); return false;">Contact</a>
-                <a href="shubham_jagdale.pdf" target="_blank" rel="noopener noreferrer" class="py-2 px-3 mx-2 box">Resume</a>
+            <nav class="text-gray-600 text-lg flex flex-col lg:flex-row space-y-2">
+                <button class="px-4" id="menuBtn" onClick="toggleMenu()"><img src="menuItems.png" width="30px"></button>
+                <a href="#about" class="navShow py-2 px-3 mx-2 box" onClick="scrollToSectionId('about'); return false;">About</a>
+                <a href="#education" class="navShow py-2 px-3 mx-2 box" onClick="scrollToSectionId('education'); return false;">Education</a>
+                <a href="#" id="navShow" class="navShow py-2 px-3 mx-2 box">project</a>
+                <a href="#contact" class="navShow py-2 px-3 mx-2 box" onClick="scrollToSectionId('contact'); return false;">Contact</a>
+                <a href="shubham_jagdale.pdf" target="_blank" rel="noopener noreferrer" class="navShow py-2 px-3 mx-2 box">Resume</a>
             </nav>
         </div>
     </header>
@@ -38,25 +39,25 @@
                     <img src="shubham.jpg" alt="Kohli" width="400px" class="rounded-2xl">
                 </div>              
             </div>
-            <div class="p-16 w-full lg:w-3/4">
-                <div class="text-xl lg:text-4xl font-bold font-serif">Shubham Jagdale</div>
+            <div class="lg:p-16 px-2 py-8 w-full lg:w-3/4">
+                <div class="text-xl lg:text-4xl font-bold font-serif text-center">Shubham Jagdale</div>
                 <span class="text-xl lg:text-3xl font-serif">I am</span>
                 <span id="introduction" class="text-lg lg:text-3xl font-serif"></span>
                 <p class="indent-2.5 leading-8 mt-4 font-serif lg:text-center">
                     As an engineering student and a full-stack developer, I have a passion for building innovative and intuitive applications. My focus is on delivering quality solutions that meet the needs of end-users while staying on top of the latest technologies and industry trends. With a strong foundation in data structures and algorithms, I am able to create efficient and scalable code that maximizes performance. In addition to my technical skills, I also possess strong problem-solving and analytical abilities, which enable me to tackle complex challenges with ease. Whether it's building a website from scratch or developing a new feature for an existing application, I am dedicated to producing top-quality work that exceeds expectations.
                 </p>
                 <div class="flex flex-row justify-center my-4 flex-wrap h-auto">
-                    <div class="h-full border-2 border-green-300 rounded-lg p-4 m-2 myBox">400+ DSA Problems</div>
-                    <div class="h-full border-2 border-green-400 rounded-lg p-4 m-2 myBox">FullStack Developer</div>
-                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox">5+ Certification</div>
-                    <div class="h-full border-2 border-green-300 rounded-lg p-4 m-2 myBox">3+ Blender Projects</div>
-                    <div class="h-full border-2 border-green-400 rounded-lg p-4 m-2 myBox">Java Developer</div>
-                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox">DJANGO Developer</div>
+                    <div class="h-full border-2 border-green-300 rounded-lg p-4 m-2 myBox w-full md:w-auto">400+ DSA Problems</div>
+                    <div class="h-full border-2 border-green-400 rounded-lg p-4 m-2 myBox w-full md:w-auto">FullStack Developer</div>
+                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox w-full md:w-auto">5+ Certification</div>
+                    <div class="h-full border-2 border-green-300 rounded-lg p-4 m-2 myBox w-full md:w-auto">3+ Blender Projects</div>
+                    <!-- <div class="h-full border-2 border-green-400 rounded-lg p-4 m-2 myBox w-full md:w-auto">GFG</div>
+                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox w-full md:w-auto">LeetCode</div> -->
                 </div>
             </div>
         </section>
         <section id="about" class="my-8 flex flex-col lg:flex-row items-center">
-            <div class="w-full lg:w-1/2 p-4">
+            <div class="w-full lg:w-1/2 py-4 px-1 lg:px-4">
                 <div class="text-white text-xl  lg:text-3xl font-bold font-serif mx-4 text-blue-300">&raquo; About Me</div>
                 <p class="text-center my-4">Hello! I'm Shubham Jagdale. I am currently pursuing my bachelors in the stream of Computer Science at Pimpri Chinchawad college of engineering, Pune.</p>
                 <p class="text-center my-4">I am a web developer enthusiast consistently trying to improve my abilities.I'm always willing to master new skills and put them to good use.</p>
@@ -67,16 +68,16 @@
             <div class="text-green-600 w-full lg:w-1/2 text-white text-center text-xl  lg:text-3xl font-bold font-serif px-8">
                 <div class="h-full border-2 border-blue-300 rounded-lg px-8 py-2 m-2 myBox inline text-white">skills</div>
                 <div class="flex flex-row justify-center my-4 flex-wrap h-auto text-lg text-white">
-                    <div class="h-full border-2 border-green-300 rounded-lg p-4 m-2 myBox">TypeScript</div>
-                    <div class="h-full border-2 border-green-400 rounded-lg p-4 m-2 myBox">JavaScript</div>
-                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox">NodeJs</div>
-                    <div class="h-full border-2 border-green-300 rounded-lg p-4 m-2 myBox">React</div>
-                    <div class="h-full border-2 border-green-400 rounded-lg p-4 m-2 myBox">CPP</div>
-                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox">JAVA</div>
-                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox">DSA</div>
-                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox">Blender</div>
-                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox">tailwindcss</div>
-                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox">Python</div>
+                    <div class="h-full border-2 border-green-300 rounded-lg p-4 m-2 myBox w-full md:w-auto">TypeScript</div>
+                    <div class="h-full border-2 border-green-400 rounded-lg p-4 m-2 myBox w-full md:w-auto">JavaScript</div>
+                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox w-full md:w-auto">NodeJs</div>
+                    <div class="h-full border-2 border-green-300 rounded-lg p-4 m-2 myBox w-full md:w-auto">React</div>
+                    <div class="h-full border-2 border-green-400 rounded-lg p-4 m-2 myBox w-full md:w-auto">CPP</div>
+                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox w-full md:w-auto">JAVA</div>
+                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox w-full md:w-auto">DSA</div>
+                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox w-full md:w-auto">Blender</div>
+                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox w-full md:w-auto">tailwindcss</div>
+                    <div class="h-full border-2 border-green-500 rounded-lg p-4 m-2 myBox w-full md:w-auto">Python</div>
                 </div>
                 <p id="sentences"></p>
             </div>
@@ -89,7 +90,7 @@
                     <div class="text-xl lg:px-16 my-1">June 2020 - June 2024</div>
                     <div class="text-2xl text-blue-600 lg:px-16 my-1">Pimpri Chinchawad College Of Engineering, Pune</div>
                     <div class="text-xl lg:px-16 my-1">B.Tech in Computer Science</div>
-                    <div class="text-xl text-green-300 lg:px-16 my-1">Current Pointer &xrarr; 8.58</div>
+                    <div class="text-xl text-green-300 lg:px-16 my-1">Current CGPA &xrarr; 8.58</div>
                     <div class="text-xl lg:px-16 my-1">Studying Data Structure and Algorithms, Database Management Systems, Operating Systems, etc.</div>
                 </div>
                 <div class="my-8">
@@ -103,7 +104,7 @@
                 <div class="my-8">
                     <div class="absolute left-0 w-4 h-8 bg-blue-600 rounded-sm text-black p-1">&raquo;</div>
                     <div class="text-xl lg:px-16 my-1">June 2015 - June 2018</div>
-                    <div class="text-2xl text-blue-600 lg:px-16 my-1">Karmvir Bhaurav Patil English Medium Scholl, Ashta</div>
+                    <div class="text-2xl text-blue-600 lg:px-16 my-1">Karmvir Bhaurav Patil English Medium School, Ashta</div>
                     <div class="text-xl lg:px-16 my-1">Secondary School Certificate(SSC)</div>
                     <div class="text-xl text-green-300 lg:px-16 my-1">SSC Percentage &xrarr; 88</div>
                     <div class="text-xl lg:px-16 my-1">Studying subjects like maths, science, marathi, Hindi, Geography, History, etc.</div>
